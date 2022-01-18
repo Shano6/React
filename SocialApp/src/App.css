@@ -1,0 +1,554 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap');
+
+
+*{
+	font-family: 'Fira Sans', sans-serif !important; 
+	font-family: 'Roboto', sans-serif !important;
+}
+
+body{
+	background-color: #f6f6f6;
+}
+
+a{
+	text-decoration: none; 
+	color: black;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 4px 10px -2px rgba(0,0,0,.2);
+	background-color: white;
+	z-index:1
+}
+
+.navLinks{
+	color: #3d7bb7;
+	font-weight: bold;
+}
+
+#friendRequests{
+	color: royalblue;
+	width: 195px;
+}
+
+.search{
+	margin: 10px;
+	display: inline-block;
+	border: 1.5px solid #ebebeb;
+	border-radius: 4px;
+	min-height: 35px;
+	width: 580px;
+	margin-left: 28%;
+}
+
+.searchTxt{
+	float: left;
+	border: none;
+	min-height: 37px;
+	margin-left: 20px;
+	width: 85%;
+}
+
+.searchBtn{
+	border: none;
+	background-image: url(./img/Search.png);
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 21px;
+    padding-top: 16px;
+    padding-right: 18px;
+    margin-top: 4px;	
+}
+
+nav ul{
+	float: right;
+	margin-right: 100px;
+	margin-top: 12px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 10px;
+}
+
+/* ADDPOST */
+
+.addpost{
+	text-align: center;
+	background-color: white;
+	border-radius:4px ;
+	width: 35%;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: -10px;
+}
+
+.postheader{
+	background-color: #f1f1f1;
+	width: 100%;
+    min-height: 15px;
+    border-radius: 4px 4px 0px 0px;
+    text-align: left;
+    padding: 10px;
+    color: #3d7bb7;
+    font-weight: bolder;
+}
+
+.textarea{
+	width: 85%;
+	border-radius: 0px 0px 0px 4px;
+	border: none;
+	padding: 10px;
+	float: left;
+}
+
+.postbtn{
+	float: right;
+	background-color: #3d7bb7;
+	color: white;
+	border: none;
+	border-radius: 0px 0px 4px 0px;
+	width: 15%;
+	padding: 10px 0px;
+}
+
+/* STATUS */
+
+.status{
+	text-align: center;
+	background-color: white;
+	border-radius:4px ;
+	width: 35%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.author{
+	display: block;
+	padding-top: 10px;
+	text-align: left;
+	font-size: 15px;
+}
+
+.authorimg{
+	display: inline-block;
+	width: 5.5%;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.authornamedate{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+}
+
+.author span{
+	vertical-align: top;
+	float: right;
+	margin-right: 10px;
+}
+
+.delButton{
+	display: inline-block;
+	background-image: url(./img/deletes.png);
+	background-color: white;
+	background-repeat: no-repeat;
+    background-size: 20px;
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+.greytext{
+	color: #b9b9b9;
+	margin-top: 3px;
+	font-size: 13px;
+}
+
+.statuscontent{
+	margin: 10px 0px;
+	padding-bottom: 14px;
+	margin-left: 10px;
+}
+
+hr{
+	background-color: #b9b9b9 ;
+	height: 1px;
+	border: none;
+}
+
+/* COMMENTS */
+
+.commentSecetion{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.addcomment img{
+	width: 4%;
+}
+
+.addcomment{
+	width: 100%;
+}
+
+.commentText{
+    width: 85%;
+    border: none;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 0px 4px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+}
+
+.loadedComments{
+	margin: 10px 0px;
+	text-align: left;
+}
+
+.loadedComments .authorimg{
+	display: inline-block;
+	width: 4%;
+}
+
+.commentWrapper{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f1f1f1;
+	width: auto;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 4px;
+	max-width: 90%;
+}
+
+.commentWrapper .authornamedate{
+	margin-left: 0px;
+
+}
+
+.eachComment{
+	display: inline-block;
+	color: black;
+	font-size: 9;
+}
+
+.commentAuthorName{
+	font-weight: bold;
+	font-size: 9;
+	margin-bottom: 5px;
+}
+
+.reactPost{
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+/* POST LIKES */
+
+.like{
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    background-image: url(./img/like.png);
+    background-repeat: no-repeat;
+    background-size: 19px;
+    width: 20px;
+	height: 23px;
+}
+
+.liked{
+	background-image: url(./img/liked.png);
+}
+
+.likeAmount{
+    position: absolute;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+/* PROFILE PAGE */
+
+.coverImageContainer{
+	margin-top: 60px;
+	text-align: center;
+	align-content: center;
+	
+}
+
+.coverImageContainer img{
+	border-radius: 0px 0px 10px 10px;
+	width: 45%;
+}
+
+.userImgContainer{
+	text-align: center;
+	width: 100%;
+	top: 280px;
+	margin-top: -110px
+}
+
+.userImgContainer img{
+	text-align: center;
+	border: 10px;
+	border-radius: 50%;
+	width: 10%;
+}
+
+.userInfo{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bolder;
+	margin-top: 15px;
+
+}
+
+.addFriendButtonContainer{
+	margin: 10px;
+	text-align: center;
+}
+
+.addFriendButton{
+	background-color: #3d7bb7;
+	padding: 10px 25px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+.white{
+	color: white;
+}
+
+/* PEOPLE */
+
+.people{
+	margin-top: 95px;
+}
+
+.addFriendButtonContainerUser{
+	margin-top: -5px;
+}
+
+.addFriendButtonUser{
+	background-color: #3d7bb7;
+	padding: 8.5px 25px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	width: 190px;
+}
+
+.pplName{
+	margin-top: 6px;
+}
+
+.pplImg{
+	margin-top: -6px;
+}
+
+/* LOGIN */
+
+.loginContainer{
+	position: relative;
+	padding: 60px 0;
+	margin: auto;
+	text-align: center;
+	width: 20%;
+	height: 30%;
+	background-color: white;
+	border-radius: 4px;
+	margin-top: 10%;
+	box-shadow:
+	0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+	0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+	0 12.5px 10px rgba(0, 0, 0, 0.06),
+	0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+	0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+	0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.loginContainer input{
+	background-color: #f1f1f1;
+	border: none;
+	margin: 10px;
+    width: 300px;
+	height: 46px;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.loginButton{
+	background-color:  #3d7bb7 !important;
+	color: white;
+	font-weight: bold;
+
+}
+
+.loginMsg{
+	margin-bottom: 30px;
+	font-size: 30px;
+	color:  #3d7bb7
+}
+
+.registerLab{
+	color: #3d7bb7;
+	margin-left: 7px;
+}
+
+.registerMsg{
+	margin-top: 30px;
+}
+
+.loginContainer label{
+	padding-right: 224px;
+	margin: 10px 0px;
+}
+
+/* CHAT */
+
+.chatApp hr{
+	margin: 0;
+	padding: 0px;
+	margin: 0px;  
+	opacity: 0.4;
+}
+
+.sidenav {
+	height: 100%;
+	width: 380px;
+	position: fixed;
+	top: 30px;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav p {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 23px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav p:hover {
+	color: #f1f1f1;
+  }
+
+.chatImg{
+	display: inline-block;
+	width: 14%;
+	border-radius: 50%;
+	margin-left: 10px;
+	vertical-align:middle
+}
+
+.chatName{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.chatPerson:hover{
+	background-color: #68aaec;
+	cursor: pointer;
+}
+
+.messageBox{
+	margin-left: 380px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border: none;
+}
+
+.messageBox input{
+	width: 70%;
+	background-color:  #f1f1f1;
+	border: none;
+	height: 55px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.sendMessage{
+	text-align: center;
+	display: inline-block;
+	width: 14%;
+	background-color: #3d7bb7;
+	height: 55px;
+	border: none;
+	box-shadow: none;
+	padding-right: 67px;
+	font-size: 20px;
+	margin-bottom:0px;
+	color: white;
+	overflow: hidden;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+.messagesContainer{
+	margin-top: 80px;
+	margin-left: 395px;
+}
+
+.message{
+	margin-top: 10px;
+	color: black;
+	border-radius: 3px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.friendsMessage{
+	background-color: #dbd9d9;
+}
+
+.myMessageContainer{
+	width: 100%;
+	float: right;
+}
+
+.myMessage{
+	background-color:#3d7bb7 ;
+	color: white;
+	margin-right: 20px;
+	float: right;
+}
+
+.message p{
+	float: left;
+}
+
+.noChat{
+	text-align: center;
+	margin-top: 160px;
+	font-size: 40px;
+	color: #3d7bb7;
+}
+
+.selectedPerson{
+	background-color:#68aaec;
+	color: #f1f1f1;
+}
+
+.selectedPerson span{
+	color: #f1f1f1;
+}
